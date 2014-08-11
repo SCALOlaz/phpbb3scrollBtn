@@ -1,0 +1,11 @@
+services:
+    scalolaz.phpbb3_scrollBtn.listener:
+        class: scalolaz\phpbb3_scrollBtn\event\listener
+        arguments:
+        - @template
+        - @user
+        - @dbal.conn
+        - %core.root_path%
+        - %core.php_ext%
+        tags:
+            - { name: event.listener }

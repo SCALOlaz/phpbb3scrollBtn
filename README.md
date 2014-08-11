@@ -1,4 +1,4 @@
-phpbb3_scrollBtn
-================
+scrollBtn
+==========
 
-scroll TopBottom buttons
+Scroll Top/Bottom buttons

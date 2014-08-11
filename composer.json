@@ -1,0 +1,30 @@
+{
+    "name": "scalolaz/phpbb3_scrollBtn",
+    "type": "phpbb-extension",
+    "description": "SCAL Scroll Top-Bottom buttons",
+    "homepage": "http://phpbbguru.net",
+    "version": "1.0.0",
+    "time": "2014-07-12",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "SCALOlaz",
+            "homepage": "http://phpbbguru.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "SCAL Scroll Top-Bottom buttons",
+		"soft-require": {
+           "phpbb/phpbb": "3.1.*@dev"
+        },
+        "version-check": {
+            "host": "scalolaz.github.io",
+            "directory": "phpbb3_scrollBtn",
+            "filename": "version.json"
+        }
+    }
+}

@@ -1,0 +1,117 @@
+<script>
+// <![CDATA[
+$(document).ready(function(){
+	var coeff = 100;
+	$(window).load(function () {
+			var $buttons   = $(".footer_fixed"); 
+			//$window    = $(window);	
+			//alert ( 'size:'+$(document).height()+', '+$(this).height() );
+				if ( $(document).height() > $(this).height() ) {
+					$buttons.removeClass('hidden');
+					$('#footer_fixed').show();
+				
+				//	$('#goTop').addClass('hidden');
+				//	$('#goBottom').removeClass('hidden');
+				}
+				else
+				{
+					$buttons.addClass('hidden');
+					$('#footer_fixed').hide();
+				
+				//	$('#goTop').removeClass('hidden');
+				//	$('#goBottom').addClass('hidden');
+				//	alert ('unhide');
+				}
+	});
+	/*
+	$(window).resize(function () {
+//
+			var $buttons   = $(".footer_fixed"); 
+			//$window    = $(window);	
+			//alert ( 'size:'+$(document).height()+', '+$(this).height() );
+				if ( $(document).height() > $(this).height() ) {
+					$buttons.removeClass('hidden');
+				//	$('#footer_fixed').fadeIn();
+				}
+				else
+				{
+					$buttons.addClass('hidden');
+				//	$('#footer_fixed').fadeOut();
+				//	alert ('unhide');
+				}
+	});
+	*/
+    $(window).scroll(function () {
+        if ( $(this).scrollTop() > coeff ) {
+            $('#goTop').fadeIn();
+        } else {
+            $('#goTop').fadeOut();
+        }
+		var footer_offset = $(document).height() - $(window).height() -  coeff ;
+		if ( $(this).scrollTop() > footer_offset ) {
+            $('#goBottom').fadeOut();
+        } else {
+            $('#goBottom').fadeIn();
+        }
+    });
+    $('#goTop').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 450);
+        return false;
+    });
+    $('#goBottom').click(function () {
+		var footer_offset = $(document).height() - $(window).height();
+        $('body,html').animate({
+            scrollTop: footer_offset
+        }, 450);
+        return false;
+    });
+
+});
+
+<!-- IF topicrow.B_USE_MENU -->
+$(function() {
+    var $sidebar   = $(".nav-panel"), 
+        $window    = $(window);
+	var menu_displayed = false;
+	
+	$('#goMenu').click(function () {
+		if (menu_displayed) {
+			$sidebar.addClass('hidden');
+		}
+		else
+		{
+			$sidebar.removeClass('hidden');
+		}
+		menu_displayed = !menu_displayed;
+		return false;
+    });
+	/*
+	$('#goMenu').mouseleave(function () {
+		if (menu_displayed) return;
+			$sidebar.addClass('hidden');
+		menu_displayed = false;
+		return false;
+    });
+	*/
+});
+<!-- ENDIF -->
+// ]]>
+</script>
+
+	<div class="footer_fixed">
+            <a href="#gotop" id="goTop" class="go_top" style="display: none;"></a>
+
+		<!-- IF topicrow.B_USE_MENU -->
+			 	<div id="nav-panel" class="nav-panel hidden">
+					<a target="_blank" title="phpBBGuru" href="http://anderson.phpbbguru.net/viewforum.php?f=5" class="feed_back">Modifications</a>
+					<a target="_blank" title="Settings" href="" class="go_settings">Settings</a>
+				</div>
+				
+			<div class="go_menu" id="goMenu" title="Click for Menu">Menu</div>
+		<!-- ENDIF -->
+			<div id="goBottomh" class="goBottomh">
+				<a href="#gobottom" id="goBottom" class="go_bottom" style="display: block;"></a>
+			</div>
+    </div>

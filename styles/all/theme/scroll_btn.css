@@ -1,0 +1,61 @@
+/* Desing */
+
+.footer_fixed {
+	position:fixed;
+	right:5px;
+	bottom:10px;
+	z-index:99;
+	cursor: pointer;
+}
+
+.go_top, 
+.go_menu, 
+.feed_back,
+.go_settings, 
+.go_bottom {
+	display: block;
+	width:43px;
+	margin:0 0 -1px;
+	background:url("./images/footer_fixed_2.png") no-repeat;
+	text-indent:-999em
+}
+
+.go_top, 
+.feed_back,
+.go_settings,
+.go_bottom {
+	height:40px;
+}
+.go_menu {
+	height:30px;
+}
+
+.go_menu{background-position:0 0px}
+.go_menu:hover{background-position:-45px 0px}
+
+.go_top {background-position:0px -29px;}
+.go_top:hover {background-position:-45px -29px}
+
+.go_bottom {background-position:0 -68px}
+.go_bottom:hover {background-position:-45px -68px}
+
+
+.go_settings{background-position:0 -107px}
+.go_settings:hover{background-position:-45px -107px}
+
+.feed_back{background-position:0 -146px}
+.feed_back:hover{background-position:-45px -146px}
+
+
+
+.footer_fixed .goBottomh {
+	display:block;
+	height:41px
+}
+
+.hidden{display:none}
+
+#nav-panel {
+	cursor: pointer;
+}
+ 
