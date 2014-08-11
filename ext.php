@@ -7,7 +7,7 @@
 *
 */
 
-namespace scalolaz\phpbb3_scrollBtn;
+namespace scalolaz\phpbb3scrollBtn;
 
 /**
 * Main extension class for this extension.

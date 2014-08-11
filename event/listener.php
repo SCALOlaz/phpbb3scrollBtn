@@ -7,7 +7,7 @@
  *
  */
 
-namespace scalolaz\phpbb3_scrollBtn\event;
+namespace scalolaz\phpbb3scrollBtn\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 

@@ -1,6 +1,6 @@
 services:
-    scalolaz.phpbb3_scrollBtn.listener:
-        class: scalolaz\phpbb3_scrollBtn\event\listener
+    scalolaz.phpbb3scrollBtn.listener:
+        class: scalolaz\phpbb3scrollBtn\event\listener
         arguments:
         - @template
         - @user

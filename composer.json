@@ -1,5 +1,5 @@
 {
-    "name": "scalolaz/phpbb3_scrollBtn",
+    "name": "scalolaz/phpbb3scrollBtn",
     "type": "phpbb-extension",
     "description": "SCAL Scroll Top-Bottom buttons",
     "homepage": "http://phpbbguru.net",
@@ -23,7 +23,7 @@
         },
         "version-check": {
             "host": "scalolaz.github.io",
-            "directory": "phpbb3_scrollBtn",
+            "directory": "phpbb3scrollBtn",
             "filename": "version.json"
         }
     }

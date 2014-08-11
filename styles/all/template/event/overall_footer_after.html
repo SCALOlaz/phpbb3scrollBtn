@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 });
 
-<!-- IF topicrow.B_USE_MENU -->
+<!-- IF !topicrow.B_USE_MENU -->
 $(function() {
     var $sidebar   = $(".nav-panel"), 
         $window    = $(window);
@@ -103,7 +103,7 @@ $(function() {
 	<div class="footer_fixed">
             <a href="#gotop" id="goTop" class="go_top" style="display: none;"></a>
 
-		<!-- IF topicrow.B_USE_MENU -->
+		<!-- IF !topicrow.B_USE_MENU -->
 			 	<div id="nav-panel" class="nav-panel hidden">
 					<a target="_blank" title="phpBBGuru" href="http://anderson.phpbbguru.net/viewforum.php?f=5" class="feed_back">Modifications</a>
 					<a target="_blank" title="Settings" href="" class="go_settings">Settings</a>
